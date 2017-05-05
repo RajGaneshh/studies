@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg2"
+    tools:context="com.example.gaja.SMART_TASK_MANAGER.login">
+
+    <EditText
+        android:id="@+id/roll_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/box_curve"
+        android:drawableLeft="@drawable/roll_no"
+        android:ems="10"
+        android:hint="  ROLL NUMBER"
+        android:inputType="textCapCharacters"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp" />
+
+    <EditText
+        android:drawableLeft="@drawable/password"
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_curve"
+        android:ems="10"
+        android:hint=" PASSWORD"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/roll_no"
+        android:layout_alignStart="@+id/roll_no" />
+
+    <Button
+        android:id="@+id/loginn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/login_color"
+        android:onClick="loginnn"
+        android:text="LOGIN" />
+</RelativeLayout>
